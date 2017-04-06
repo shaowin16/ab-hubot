@@ -11,6 +11,6 @@ RUN npm --registry=https://registry.npm.taobao.org install -g yo --allow-root ge
 #issue:https://github.com/yeoman/yeoman.github.io/issues/282#issuecomment-64543114
 
 #生成机器人实例
-RUN chmod g+rwx /root /root/.config /root/.config/configstore && yo hubot --defaults
+RUN chmod g+rwx /root /root/.config /root/.config/configstore /root/.config/configstore/insight-yo.json && yo hubot --defaults
 
 CMD ["./bin/hubot","--name myhubot"]
